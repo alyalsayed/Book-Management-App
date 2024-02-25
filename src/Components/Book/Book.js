@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import "./Book.css";
 const Book = ({ id, bookname, author, price, quantity, date, onRemove }) => {
   const navigate = useNavigate();
 

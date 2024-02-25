@@ -1,0 +1,14 @@
+.book {
+  margin: 10px;
+  width: 288px;
+  overflow: hidden;
+}
+.book .book-title {
+  font-weight: bold;
+}
+.book .book-details {
+  margin-bottom: 1rem;
+}
+.book .book-details > div {
+  margin-bottom: 0.5rem;
+}

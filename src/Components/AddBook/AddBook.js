@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import "../../Context/BooksContext";
 import BookForm from "./BookForm";
+import BooksContext from "../../Context/BooksContext";
 
-const AddBook = ({ books, setBooks }) => {
+const AddBook = (/*props*/) => {
+  //   const { books, setBooks } = props;
+  const { books, setBooks } = useContext(BooksContext); //use context method (called consumer) instead of props method
   const navigate = useNavigate();
 
   const handleOnSubmit = (book) => {
